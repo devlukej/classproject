@@ -100,7 +100,6 @@ public class MainActivity extends AppCompatActivity {
                     tvLight.setText((String.valueOf(sensorEvent.values[0])));
                 }
                 if (roll*rad_to_dgr > -60 && roll*rad_to_dgr < 60 && pitch*rad_to_dgr > -60 && pitch*rad_to_dgr < 60 && yaw*rad_to_dgr > -60 && yaw*rad_to_dgr < 60 && sensorEvent.values[0] < 150 && swBtn.isChecked()){
-                    vib.vibrate(new long[]{5000,1000,500,1000,500,1000},-1);
                     imgView.setImageResource(R.drawable.no);
 
                 } else {
